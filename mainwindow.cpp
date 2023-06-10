@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
     widget = new widgetPaint(this);
-    widget->setGeometry(15,50,781,511);
+    widget->setGeometry(15,50,800,500);
     connect(this, &MainWindow::signalPaint, widget, &widgetPaint::slotPaint);
     connect(this, &MainWindow::signalLine, widget, &widgetPaint::slotLine);
     connect(this, &MainWindow::signalStart, widget, &widgetPaint::slotStart);
